@@ -3,9 +3,7 @@ import os
 txt = raw_input("Enter your command: ")
 
 lst = [txt]
- 
 
-#while True:
 for x in lst:
 	if (("open" in x) or ("run" in x) or ("execute" in x)) and ("calculator" in x):
 		os.system('bash -c gnome-calculator')
